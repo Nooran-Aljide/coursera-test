@@ -9,7 +9,7 @@ body{
  font-family: 'Castoro', serif;
 background: url("https://blog.gurudeviaje.com/wp-content/uploads/2019/09/sharon-mccutcheon-tr1po6kOWEc-unsplash-1.jpg") no-repeat;
 background-repeat: no-repeat;
-
+background-attachment: fixed;
 background-size: cover;
 
 }
@@ -99,7 +99,7 @@ margin: 12px 0;
      font-family: 'Castoro', serif;
     background: url("https://blog.gurudeviaje.com/wp-content/uploads/2019/09/sharon-mccutcheon-tr1po6kOWEc-unsplash-1.jpg") no-repeat;
     background-repeat: no-repeat;
-   
+   background-attachment: fixed;
     background-size: cover;
     
     }
