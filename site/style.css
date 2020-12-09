@@ -8,7 +8,7 @@ body{
    /* font-family: sans-serif;*/
  /*font-family: 'Permanent Marker', cursive;*/
  font-family: 'Castoro', serif;
-background: url("ph.jfif") no-repeat;
+background: url("https://blog.gurudeviaje.com/wp-content/uploads/2019/09/sharon-mccutcheon-tr1po6kOWEc-unsplash-1.jpg) no-repeat;
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: cover;
@@ -68,6 +68,7 @@ float: left;
 margin:0 10px ;
 }
 .button {
+    font-family: 'Castoro', serif;
 width: 100%;
 background: none;
 border: 2px solid;
@@ -81,6 +82,7 @@ margin: 12px 0;
 
 }
 .but a {
+    font-family: 'Castoro', serif;
     width: auto;
     background: none;
     border: 2px solid;
@@ -105,7 +107,7 @@ margin: 12px 0;
        /* font-family: sans-serif;*/
      /*font-family: 'Permanent Marker', cursive;*/
      font-family: 'Castoro', serif;
-    background: url("ph.jfif") no-repeat;
+    background: url("https://blog.gurudeviaje.com/wp-content/uploads/2019/09/sharon-mccutcheon-tr1po6kOWEc-unsplash-1.jpg") no-repeat;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
