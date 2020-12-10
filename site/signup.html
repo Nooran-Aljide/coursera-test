@@ -6,24 +6,64 @@
         <title>Sign up Page</title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">   
+        <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet"> 
+        <script src="javaScript.js"></script>
+
     </head>
     <body>
-        <div class="signup-form">
-            
-           <h1>Sign Up</h1>
-           <div class="txtb">
+    	<form>
+        <div class="signup-form">   
+        <h1>Sign Up</h1>
+
+        <div class="txtb">
             <i class="fas fa-user"></i>
-           <input type="text" placeholder="User name"name="" value="" >
-           </div>
-           <div class="txtb">
-            <i class="fas fa-envelope-open"></i>
-           <input type="email" placeholder="Email"name="" value="">
+           <input type="text" placeholder="Pharmacy name"name="" value="" pattern="[a-zA-Z]+" required>
         </div>
+
+        <div class="txtb">
+            <i class="fas fa-id-badge"></i>
+           <input type="text" placeholder="Pharmacy ID"name="" value="" required >
+        </div>
+        
+        <div class="txtb">
+            <i class="fas fa-user"></i>
+           <input type="text" placeholder="Pharmacist first name"name="" value="" pattern="[a-zA-Z]+" required >
+        </div>
+        
+        <div class="txtb">
+            <i class="fas fa-user"></i>
+           <input type="text" placeholder="Pharmacist last name"name="" value="" pattern="[a-zA-Z]+" required >
+        </div>
+
+        <div class="txtb">
+            <i class="fas fa-id-badge"></i>
+           <input type="text" placeholder="Pharmacist syndical number" name="" value="" pattern="[0-9]{5}" required>
+        </div>
+        
+        <div class="txtb">
+            <i class="fas fa-envelope-open"></i>
+            <input type="email" placeholder="Email"name="" value="">
+        </div>
+
+        <div class="txtb">
+            <i class="fas fa-phone-alt"></i>
+           <input type="text" placeholder="Phone number"name="" value="" required >
+        </div>
+
         <div class="txtb">
             <i class="fas fa-lock"></i>
-           <input type="Password" placeholder="Pasword"name=""value="" >
+           <input type="Password" placeholder="Password"name=""value="" id ="pass1" required>
         </div>
+
+        <div class="txtb">
+            <i class="fas fa-lock"></i>
+           <input type="Password" placeholder="Confirm password"name=""value="" id ="pass2"  onchange="return check()" required>
+           <p id="pass">Passwords are not the same</p>
+        </div>
+
+        <input class = "submit" type="submit" value="Submit" onclick="return check();" >
+    </form>
+        
         <div class="link">
            <a href="index.html">Already Have one?</a>
         </div>
