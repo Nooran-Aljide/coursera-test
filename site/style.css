@@ -1,51 +1,44 @@
 @import"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css";
-/*styl1*******************************************************************/
-
-body{
-   
+/*common styles****/
+body{   
     margin: 0;
     padding: 0;
-   /* font-family: sans-serif;*/
- /*font-family: 'Permanent Marker', cursive;*/
- font-family: 'Castoro', serif;
-background: url("https://blog.gurudeviaje.com/wp-content/uploads/2019/09/sharon-mccutcheon-tr1po6kOWEc-unsplash-1.jpg") no-repeat;
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: cover;
+    font-family: 'Castoro', serif;
+    background: url("https://blog.gurudeviaje.com/wp-content/uploads/2019/09/sharon-mccutcheon-tr1po6kOWEc-unsplash-1.jpg") no-repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 
 }
-
+/*login page *****/
 .login-box{
-/*width: 120px;*/
-width: 300px;
-padding: 20px;
-text-align: center;
-position: absolute;
-top: 50%; 
-left: 50%;
-transform:translate(-50%,-50%) ;
-color: tomato;
-
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform:translate(-50%,-50%) ;
+    color: tomato;
 }
-.login-box h1{
 
+.login-box h1{
     font-size: 40px;
     border-bottom:3px solid ;
     margin-bottom: 30px;
     padding: 10px 0 ;
 }
+
 .textbox{
-width: 100%;
-overflow: hidden;
-font-size: 20px;
-padding: 8px 0;
-margin: 8px 0;
-border-bottom: 1px solid;
-
-
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid;
 }
-.textbox i{
 
+.textbox i{
 width: 26px;
 float: left;
 text-align: center;
@@ -100,20 +93,8 @@ margin: 12px 0;
     }
     /*styl2*******************************************************************/
 
-    body{
-   
-        margin: 0;
-        padding: 0;
-       /* font-family: sans-serif;*/
-     /*font-family: 'Permanent Marker', cursive;*/
-     font-family: 'Castoro', serif;
-    background: url("https://blog.gurudeviaje.com/wp-content/uploads/2019/09/sharon-mccutcheon-tr1po6kOWEc-unsplash-1.jpg") no-repeat;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    
-    }
     .signup-form{
+        display:  block ;
         width:25%;
         padding: 20px;
         text-align: center;
@@ -122,13 +103,14 @@ margin: 12px 0;
         left: 50%;
         transform:translate(-50%,-50%) ;
         color: tomato;
-    
+        margin-top: 3% ;
     }
     .signup-form h1{
         font-size: 40px;
         border-bottom:3px solid ;
         margin-bottom: 30px;
         padding: 10px 0 ;
+         margin-top: 1% ;
     }
     .txtb{
         width: 100%;
@@ -164,15 +146,59 @@ margin: 12px 0;
         }
 
         .submit{
-            width : 35% ;
+            width : 70% ;
             border : solid tomato;
             background:none ;
             color : tomato;
             font-size:  150% ;
             line-height: 120% ;
             margin : 1% ;
+            box-sizing: border-box;
         }
 
       #pass{
         display: none ;
       }
+
+/*Home page********************/
+ header {
+   width : 90% ;
+   display : block ;
+   background :none;
+   border : 3px solid tomato ;
+   border-radius :10px  ;
+   padding:1% ;
+   margin : 0 auto ;
+   text-align:  center; ;
+   margin-top : 1%;
+}
+
+ nav a {
+  background :#ffffff;
+  display : inline-block ;
+  padding :1% ;
+  border-radius :5px  ;
+  margin-right:2%;
+  text-decoration : none;
+  text-align : center ;
+  width : 10% ;
+  font-size : 120%;
+  color: tomato ;
+  line-height: 70% ;
+}
+
+.active {
+        color :#ffffff ; 
+        background-color: tomato ;
+    }
+
+nav a:hover{
+    color :#000000 ; 
+    font-size: 150% ; 
+}
+
+#logo {
+    margin-top: 2% ; 
+    margin-left: 5% ;
+    width: 30% ;
+}
