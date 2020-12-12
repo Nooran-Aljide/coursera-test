@@ -3,22 +3,22 @@
     <head>
         <link rel="icon" type="image/png" href="https://i.ibb.co/xGXRwLF/130822812-836734607102721-7712471177251957862-n.png" />
         <meta charset="utf-8" />
-        <title>Login</title>
+        <title>Login Page</title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">    </head>
     <body>
 
- <header>
+
+     <header>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="AboutUs.html">About Us</a>
-            <a href="login.html"   class = "active">LogIn</a>
+            <a href="Home.html" >Home</a>
+            <a href="AboutUs.html" class = "active">About Us</a>
+            <a href="login.html">LogIn</a>
             <a href="signup.html" >Sign Up</a>
         </nav>
       </header>
       
-
         <form>
         <div class="login-box">
 
@@ -31,8 +31,13 @@
 
           <div class="textbox">
             <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Password" name="" value="" required>
-         </div>
+            <input type="password" placeholder="Password" id="myinput"name="" value="" required>
+            <span class="eye" onclick="return myfunction()">
+                <i id="hide1" class="fas fa-eye"></i>
+                <i id="hide2" class="fas fa-eye-slash"></i>
+          </span>
+          </div>
+      
 
         <input class = "button" type="submit" value="Sign in"  >
         <div class="but">
@@ -44,5 +49,26 @@
 
         </div>
 
+       <script>
+          function myfunction(){
+            var x =document.getElementById("myinput");
+           var y =document.getElementById("hide1");
+           var z =document.getElementById("hide2");
+           if(x.type==='password'){
+                x.type="text";
+                 y.style.display="block";
+                 z.style.display="none";
+                        }
+                  else{
+             x.type="password";
+             y.style.display="none";
+              z.style.display="block";
+                }
+                    }
+</script>
     </body>
+
+
+
+
 </html>
